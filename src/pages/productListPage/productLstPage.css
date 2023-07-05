@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .dropdownStyle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .dropdownStyle {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns in the first row */
+      grid-template-rows: auto auto auto; /* Auto-size rows */
+      justify-items: center;
+      align-items: center;
+    }
+    
+    /* Target the elements in the second row and set them to 2 columns */
+    .dropdownStyle > *:nth-child(n+4):nth-child(-n+5) {
+      grid-column: span 1;
+    }
+    
+    /* Target the element in the third row and set it to 1 column */
+    .dropdownStyle > *:nth-child(6) {
+      grid-column: span 2;
+    }
+  }

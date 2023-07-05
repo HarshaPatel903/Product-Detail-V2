@@ -1,0 +1,42 @@
+.sort-dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .sort-dropdown select {
+    appearance: none;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 230px;
+  }
+  
+  .sort-dropdown select:hover {
+    border-color: #999;
+  }
+  
+  .sort-dropdown select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3);
+  }
+  
+  .sort-dropdown::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #888;
+    pointer-events: none;
+  }
+
+ 

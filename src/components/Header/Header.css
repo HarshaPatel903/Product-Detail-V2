@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  .header__logo {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+  }
+  
+  .header__search {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__search input {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .header__search-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .header__profile,
+  .header__cart {
+    position: relative;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .header__cart_count{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 16px;
+    text-align: center;
+  }
+  .popup{
+    width: max-content;
+    height: min-content;
+    top: 100%;
+    right: 0;
+    left: auto;
+    vertical-align: baseline;
+    box-shadow: 0 2px 5px rgba(65, 28, 28, 0.3);
+    font-family: Arial, sans-serif;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: rgb(15, 13, 13);
+    color:whitesmoke;
+    position: absolute;
+    font-size: 14px;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .header__search {
+        position: relative;
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+      }
+    .header__profile,
+  .header__cart {
+    font-size: 20px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+  .header__logo {
+    height: 40px;
+    width: 40px;
+    margin-right: auto;
+  }
+  .header__search input {
+    width: 160px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  .popup{
+    font-size: 10px;
+    width: max-content;
+    height: min-content;
+    top: 100%;
+    right: 0;
+    vertical-align: baseline;
+    box-shadow: 0 2px 5px rgba(65, 28, 28, 0.3);
+    font-family: Arial, sans-serif;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: rgb(15, 13, 13);
+    color:whitesmoke;
+    position: absolute;
+    font-size: 14px;
+    z-index: 1;
+  }
+  }

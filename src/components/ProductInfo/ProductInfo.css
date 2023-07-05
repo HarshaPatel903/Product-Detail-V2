@@ -1,0 +1,155 @@
+.product_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main_div{
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.product_size{
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.product_price{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ea1a0b;
+}
+.product_size_box{
+    padding: 8px;
+    border: 1px solid black;
+    width: min-content;
+    /* margin: 2px; */
+    margin-right: 6px;
+    border-radius: 4px;
+}
+.rowcss{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.Icon_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-wraper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.rowcssPI{
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+.product_mrp_price{
+    color: #8e8c8c;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.upload-prec{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right:70px;
+    background-color: #ef6c00;
+    width: fit-content;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.upload-btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0.01;
+}
+.product-icon-wraper{
+    margin-top: 20px;
+    height: 100px;
+    width: 80%;
+}
+.upload-btn-main{
+    position: relative
+}
+@media screen and (max-width: 800px) {
+    .product_title{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .product_size{
+        font-size: 13px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .product_price{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .product_mrp_price{
+        color: #8e8c8c;
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+    .upload-btn{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 150px;
+        top: 92%;
+        z-index: 100;
+    }
+    .upload-prec{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #ef6c00;
+        width: auto;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .product-icon-wraper{
+        height: 80px;
+        width: 100%;
+        margin-bottom: 70px;
+        margin-top: 0;
+    }
+    .rowcssPI{
+        margin-top: 30px;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 0px;
+    }
+    .upload-btn-main{
+        position: absolute
+    }
+    .main_div{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+.row-product-info{
+    display: flex;
+    margin-left: 50px;
+}
+@media screen and (max-width: 800px) {
+    .row-product-info{
+        display: block;
+        margin-left: 0;
+    }
+}
